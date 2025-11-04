@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 // FIX: Import Comment as CommentType from types.ts and remove it from utils import.
-import { Movie, MovieCategory, DownloadLink, TmdbSearchResult, TmdbDetailResponse, Season, Episode, AdminUser, CurrentUser, AdminPermissions, Comment as CommentType, TelegramLink } from '../types';
-import { getAllCommentsFromStorage, deleteCommentFromStorage, getAdmins, addAdmin, removeAdmin, updateAdminPermissions } from '../utils';
+import { Movie, MovieCategory, DownloadLink, TmdbSearchResult, TmdbDetailResponse, Season, Episode, AdminUser, CurrentUser, AdminPermissions, Comment as CommentType, TelegramLink } from './types';
+import { getAllCommentsFromStorage, deleteCommentFromStorage, getAdmins, addAdmin, removeAdmin, updateAdminPermissions } from './utils';
 
 interface AdminPanelProps {
   movies: Movie[];
